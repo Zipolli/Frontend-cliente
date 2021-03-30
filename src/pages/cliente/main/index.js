@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
  
     componentDidMount() {
-        fetch(`http://localhost:3003/sistema/usuarios`)
+        fetch(`https://back-cliente.herokuapp.com/cliente`)
             .then(usuario =>
                 usuario.json().then(usuario => this.setState({ usuario }))
             )
