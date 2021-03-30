@@ -10,7 +10,7 @@ export default class Cliente extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`https://backend-cliente-eng.herokuapp.com/cliente/${id}`)
+        fetch(`http://localhost:3000/cliente/${id}`)
             .then(cliente =>
                 cliente.json().then(cliente => this.setState({ cliente }))
             )
